@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "jsEngine": "hermes",
+    "scheme": "chatgptbot-app",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "backgroundColor": "#ddffe2",
+      "image": "./assets/splash.png",
+      "resizeMode": "contain"
+    },
+    "icon": "./assets/icon.png",
+    "web": {
+      "bundler": "metro"
+    },
+    "name": "chatgptbot-app",
+    "slug": "chatgptbot-app",
+    "android": {
+      "package": "com.albertgao.chatgptbotapp"
+    },
+    "ios": {
+      "bundleIdentifier": "com.albertgao.chatgptbotapp",
+      "usesAppleSignIn": true,
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a65905bd-5177-442f-bcc1-2743765ecc28"
+      }
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static",
+            "unstable_networkInspector": true
+          }
+        }
+      ],
+      "@react-native-firebase/app",
+      "@react-native-firebase/auth",
+      "expo-router"
+    ],
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "sdkVersion": "48.0.0"
+  },
+  "name": "chatgpt-app"
+}
